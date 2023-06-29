@@ -1,5 +1,7 @@
+"use client";
+
 import Link from "next/link";
-import React from "react";
+import React, { useState } from "react";
 import style from "./Page.module.css";
 
 const menu_items = [
@@ -14,6 +16,12 @@ const menu_items = [
 ];
 
 const PlayGround = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleIsOpen = () => {
+    setIsOpen((prev) => !prev);
+  };
+
   return (
     <>
       <nav className="my-5 mx-60 flex justify-between">
@@ -31,6 +39,16 @@ const PlayGround = () => {
           <Link className={style.nav_items} href="/">
             <span className={style.item}>Contact</span>
           </Link>
+        </div>
+        <h2 className="text-white">isOpen : {isOpen ? "true" : "false"}</h2>
+
+        <div
+          className={isOpen ? style.open_toggle_btn : style.toggle_btn}
+          onClick={toggleIsOpen}
+        >
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
       </nav>
 
