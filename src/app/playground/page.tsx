@@ -25,7 +25,7 @@ const PlayGround = () => {
   return (
     <>
       <nav className="my-5 mx-60 flex justify-between">
-        <h2 className="text-lg font-semibold gap">PageTitle</h2>
+        <h2 className="text-lg font-semibold gap">BlueCity</h2>
         {/* <div className="flex gap-10 text-red-300">
         {menu_items.map((item) => item.title)}
       </div> */}
@@ -40,7 +40,6 @@ const PlayGround = () => {
             <span className={style.item}>Contact</span>
           </Link>
         </div>
-        <h2 className="text-white">isOpen : {isOpen ? "true" : "false"}</h2>
 
         <div
           className={isOpen ? style.open_toggle_btn : style.toggle_btn}
@@ -79,7 +78,7 @@ const PlayGround = () => {
             <img
               className="object-cover object-center rounded"
               alt="hero"
-              src="https://dummyimage.com/720x600"
+              src="city.jpg"
             />
           </div>
         </div>
