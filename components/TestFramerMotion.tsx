@@ -7,21 +7,23 @@ const TestFramerMotion = ({ children }: { children: ReactNode }) => {
       variants={{
         offscreen: {
           // 画面外の場合のスタイル
-          y: 100,
+          x: 100,
+          y: 50,
           opacity: 0,
         },
         onscreen: {
           // 画面内の場合のスタイル
+          x: 0,
           y: 0,
           opacity: 1,
           transition: {
-            duration: 0.5,
+            duration: 1,
           },
         },
       }}
       initial="offscreen" // 初期表示はoffscreen
       whileInView="onscreen" // 画面内に入ったらonscreen
-      viewport={{ once: false, amount: 0 }}
+      viewport={{ once: true, amount: 0 }}
     >
       <div>{children}</div>
     </motion.div>
