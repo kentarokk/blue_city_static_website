@@ -4,9 +4,8 @@ import Link from "next/link";
 import React, { useState } from "react";
 import style from "./Page.module.css";
 import Image from "next/image";
-import TestFramerMotion from "../../components/TestFramerMotion";
-import RightNav from "../../components/RightNav";
-import NavBar from "../../components/NavBar/NavBar";
+import TestFramerMotion from "../components/TestFramerMotion";
+import NavBar from "../components/NavBar/NavBar";
 
 const menu_items = [
   {

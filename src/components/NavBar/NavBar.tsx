@@ -1,4 +1,8 @@
+"use client";
+
 import Image from "next/image";
+
+import "@/app/globals.css";
 import Link from "next/link";
 import React, { useState } from "react";
 import style from "./NavBar.module.css";
@@ -22,7 +26,7 @@ const NavBar = () => {
         {/* <div className="flex gap-10 text-red-300">
         {menu_items.map((item) => item.title)}
       </div> */}
-        <div className="flex-row flex gap-4 hidden lg:inline-block">
+        <div className="flex-row lg:flex gap-4 hidden">
           <Link className={style.nav_items} href="/">
             <span className={style.item}>Home</span>
           </Link>
