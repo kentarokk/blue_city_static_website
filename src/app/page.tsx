@@ -5,6 +5,8 @@ import React, { useState } from "react";
 import style from "./Page.module.css";
 import Image from "next/image";
 import TestFramerMotion from "../../components/TestFramerMotion";
+import RightNav from "../../components/RightNav";
+import NavBar from "../../components/NavBar/NavBar";
 
 const menu_items = [
   {
@@ -18,47 +20,9 @@ const menu_items = [
 ];
 
 const PlayGround = () => {
-  const [isOpen, setIsOpen] = useState(false);
-
-  const toggleIsOpen = () => {
-    setIsOpen((prev) => !prev);
-  };
-
   return (
     <>
-      <nav className="my-5 mx-10 lg:mx-60 flex flex-row justify-between items-center">
-        <Image
-          src="/logo.svg"
-          alt="bluecity"
-          width={90}
-          height={80}
-          className="mt-3"
-        />
-        {/* <div className="flex gap-10 text-red-300">
-        {menu_items.map((item) => item.title)}
-      </div> */}
-        <div className="flex-row flex gap-4 hidden lg:inline-block">
-          <Link className={style.nav_items} href="/">
-            <span className={style.item}>Home</span>
-          </Link>
-          <Link className={style.nav_items} href="/">
-            <span className={style.item}>About</span>
-          </Link>
-          <Link className={style.nav_items} href="/">
-            <span className={style.item}>Contact</span>
-          </Link>
-        </div>
-
-        <div
-          className={isOpen ? style.open_toggle_btn : style.toggle_btn}
-          onClick={toggleIsOpen}
-        >
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-      </nav>
-
+      <NavBar />
       <section className="text-white body-font">
         <div className="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
           <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">

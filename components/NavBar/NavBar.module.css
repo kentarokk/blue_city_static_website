@@ -1,0 +1,97 @@
+.item::after {
+  position: absolute;
+  left: 0;
+  bottom: 0px;
+  content: "";
+  width: 100%;
+  height: 2px;
+  background-color: rgb(99 102 241);
+  transform: scale(0, 1);
+  transform-origin: left top;
+  transition: transform 0.3s;
+}
+
+.item:hover::after {
+  transform: scale(1, 1);
+}
+
+.nav_items {
+  display: flex;
+  gap: 1rem;
+  position: relative;
+}
+
+.toggle_btn {
+  display: block;
+  position: fixed;
+  top: 25px;
+  right: 45px;
+  width: 30px;
+  height: 30px;
+  transition: all 0.5s;
+  cursor: pointer;
+  z-index: 20;
+}
+.toggle_btn span {
+  display: block;
+  position: absolute;
+  left: 0;
+  width: 30px;
+  height: 2px;
+  background-color: #eee;
+  border-radius: 4px;
+  transition: all 0.5s;
+}
+.toggle_btn span:nth-child(1) {
+  top: 4px;
+}
+.toggle_btn span:nth-child(2) {
+  top: 14px;
+}
+.toggle_btn span:nth-child(3) {
+  top: 24px;
+}
+.open .toggle_btn span {
+  background-color: #fff;
+}
+
+.open_toggle_btn {
+  display: block;
+  position: fixed;
+  top: 25px;
+  right: 45px;
+  width: 30px;
+  height: 30px;
+  transition: transform 0.5s;
+  cursor: pointer;
+  z-index: 20;
+}
+
+.open_toggle_btn span {
+  display: block;
+  position: absolute;
+  left: 0;
+  width: 30px;
+  height: 2px;
+  background-color: #eee;
+  border-radius: 4px;
+  transition: transform 0.5s;
+}
+
+.open_toggle_btn span:nth-child(1) {
+  background-color: rgb(99 102 241);
+  top: 14px;
+  -webkit-transform: translateY(0px) rotate(-45deg);
+  transform: translateY(0px) rotate(-315deg);
+}
+
+.open_toggle_btn span:nth-child(2) {
+  opacity: 0;
+}
+
+.open_toggle_btn span:nth-child(3) {
+  background-color: rgb(99 102 241);
+  top: 14px;
+  -webkit-transform: translateY(0px) rotate(45deg);
+  transform: translateY(0px) rotate(315deg);
+}
