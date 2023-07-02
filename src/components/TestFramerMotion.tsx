@@ -8,13 +8,11 @@ const TestFramerMotion = ({ children }: { children: ReactNode }) => {
         offscreen: {
           // 画面外の場合のスタイル
           x: 100,
-          y: 50,
           opacity: 0,
         },
         onscreen: {
           // 画面内の場合のスタイル
           x: 0,
-          y: 0,
           opacity: 1,
           transition: {
             duration: 1,
