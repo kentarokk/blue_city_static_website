@@ -21,102 +21,109 @@
   position: relative;
 }
 
-.open_nav_items {
+.nav_items_modal {
   display: flex;
-  left: 0px;
-  top: 0px;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 2rem;
-  font-size: 2rem;
-  width: 100%;
-  background-color: rgb(21, 21, 21);
-  padding: 4rem, 8rem;
-  position: absolute;
-  height: 60%;
-  opacity: 95%;
-  transition: all 0.5s;
-}
-.close_nav_items {
-  display: none;
-  top: -100px;
-  opacity: 0;
+  flex-direction: row;
+  gap: 1rem;
 }
 
-.toggle_btn {
-  display: block;
-  position: fixed;
-  top: 25px;
-  right: 45px;
-  width: 30px;
-  height: 30px;
-  transition: all 0.5s;
-  cursor: pointer;
-  z-index: 30;
-}
-.toggle_btn span {
-  display: block;
-  position: absolute;
-  left: 0;
-  width: 30px;
-  height: 2px;
-  background-color: #eee;
-  border-radius: 4px;
-  transition: all 0.5s;
-}
-.toggle_btn span:nth-child(1) {
-  top: 4px;
-}
-.toggle_btn span:nth-child(2) {
-  top: 14px;
-}
-.toggle_btn span:nth-child(3) {
-  top: 24px;
-}
-.open .toggle_btn span {
-  background-color: #fff;
-}
+@media only screen and (max-width: 1024px) {
+  .nav_items_modal {
+    position: fixed;
+    left: 0px;
+    /* top: -100vh; */
+    top: 0vh;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
 
-.open_toggle_btn {
-  display: block;
-  position: fixed;
-  top: 25px;
-  right: 45px;
-  width: 30px;
-  height: 30px;
-  transition: transform 0.5s;
-  cursor: pointer;
-  z-index: 20;
-}
+    font-size: 2rem;
+    color: #eee;
+    background-color: rgb(21, 21, 21);
+    opacity: 0%;
+    transition: all 1s;
+  }
+  .open_nav_items {
+    /* transform: translateY(100vh); */
+    opacity: 90%;
+  }
+  .toggle_btn {
+    display: block;
+    position: fixed;
+    top: 25px;
+    right: 45px;
+    width: 30px;
+    height: 30px;
+    transition: all 0.5s;
+    cursor: pointer;
+    z-index: 30;
+  }
+  .toggle_btn span {
+    display: block;
+    position: absolute;
+    left: 0;
+    width: 30px;
+    height: 2px;
+    background-color: #eee;
+    border-radius: 4px;
+    transition: all 0.5s;
+  }
+  .toggle_btn span:nth-child(1) {
+    top: 4px;
+  }
+  .toggle_btn span:nth-child(2) {
+    top: 14px;
+  }
+  .toggle_btn span:nth-child(3) {
+    top: 24px;
+  }
+  .open .toggle_btn span {
+    background-color: #fff;
+  }
+  .open_toggle_btn {
+    display: block;
+    position: fixed;
+    top: 25px;
+    right: 45px;
+    width: 30px;
+    height: 30px;
+    transition: transform 0.5s;
+    cursor: pointer;
+    z-index: 20;
+  }
 
-.open_toggle_btn span {
-  display: block;
-  position: absolute;
-  left: 0;
-  width: 30px;
-  height: 2px;
-  background-color: #eee;
-  border-radius: 4px;
-  transition: transform 0.5s;
-}
+  .open_toggle_btn span {
+    display: block;
+    position: absolute;
+    left: 0;
+    width: 30px;
+    height: 2px;
+    background-color: #eee;
+    border-radius: 4px;
+    transition: transform 0.5s;
+  }
 
-.open_toggle_btn span:nth-child(1) {
-  /* background-color: rgb(99 102 241); */
-  background-color: #eee;
-  top: 14px;
-  -webkit-transform: translateY(0px) rotate(-45deg);
-  transform: translateY(0px) rotate(-315deg);
-}
+  .open_toggle_btn span:nth-child(1) {
+    /* background-color: rgb(99 102 241); */
+    background-color: #eee;
+    top: 14px;
+    -webkit-transform: translateY(0px) rotate(-45deg);
+    transform: translateY(0px) rotate(-315deg);
+  }
 
-.open_toggle_btn span:nth-child(2) {
-  opacity: 0;
-}
+  .open_toggle_btn span:nth-child(2) {
+    opacity: 0;
+  }
 
-.open_toggle_btn span:nth-child(3) {
-  /* background-color: rgb(99 102 241); */
-  background-color: #eee;
-  top: 14px;
-  -webkit-transform: translateY(0px) rotate(45deg);
-  transform: translateY(0px) rotate(315deg);
+  .open_toggle_btn span:nth-child(3) {
+    /* background-color: rgb(99 102 241); */
+    background-color: #eee;
+    top: 14px;
+    -webkit-transform: translateY(0px) rotate(45deg);
+    transform: translateY(0px) rotate(315deg);
+  }
 }

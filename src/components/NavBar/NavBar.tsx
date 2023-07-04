@@ -15,7 +15,7 @@ const NavBar = () => {
   };
   return (
     <>
-      <nav className="my-5 mx-10 lg:mx-60 flex flex-row justify-between items-center">
+      <nav className="my-5 mx-10 lg:mx-10 flex flex-row justify-around items-center">
         <Image
           src="/logo.svg"
           alt="bluecity"
@@ -27,11 +27,10 @@ const NavBar = () => {
         {menu_items.map((item) => item.title)}
       </div> */}
         <div
-          className={`${
-            isOpen ? style.open_nav_items : style.close_nav_items
-          } flex-row lg:flex`}
+          className={`${style.nav_items_modal} ${
+            isOpen ? style.open_nav_items : ""
+          } `}
         >
-          {/* <div className="flex-row lg:flex gap-4 absolute bg-indigo-500 w-full py-4 pl-7 top-[-400px] transition-all ease-in duration-500 z-[-1]"> */}
           <Link className={style.nav_items} href="/">
             <span className={style.item}>Home</span>
           </Link>
@@ -44,7 +43,9 @@ const NavBar = () => {
         </div>
 
         <div
-          className={isOpen ? style.open_toggle_btn : style.toggle_btn}
+          className={`${
+            isOpen ? style.open_toggle_btn : style.toggle_btn
+          } lg:hidden`}
           onClick={toggleIsOpen}
         >
           <span></span>
