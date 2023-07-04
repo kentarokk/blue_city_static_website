@@ -21,6 +21,29 @@
   position: relative;
 }
 
+.open_nav_items {
+  display: flex;
+  left: 0px;
+  top: 0px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  font-size: 2rem;
+  width: 100%;
+  background-color: rgb(21, 21, 21);
+  padding: 4rem, 8rem;
+  position: absolute;
+  height: 60%;
+  opacity: 95%;
+  transition: all 0.5s;
+}
+.close_nav_items {
+  display: none;
+  top: -100px;
+  opacity: 0;
+}
+
 .toggle_btn {
   display: block;
   position: fixed;
@@ -30,7 +53,7 @@
   height: 30px;
   transition: all 0.5s;
   cursor: pointer;
-  z-index: 20;
+  z-index: 30;
 }
 .toggle_btn span {
   display: block;
@@ -79,7 +102,8 @@
 }
 
 .open_toggle_btn span:nth-child(1) {
-  background-color: rgb(99 102 241);
+  /* background-color: rgb(99 102 241); */
+  background-color: #eee;
   top: 14px;
   -webkit-transform: translateY(0px) rotate(-45deg);
   transform: translateY(0px) rotate(-315deg);
@@ -90,7 +114,8 @@
 }
 
 .open_toggle_btn span:nth-child(3) {
-  background-color: rgb(99 102 241);
+  /* background-color: rgb(99 102 241); */
+  background-color: #eee;
   top: 14px;
   -webkit-transform: translateY(0px) rotate(45deg);
   transform: translateY(0px) rotate(315deg);

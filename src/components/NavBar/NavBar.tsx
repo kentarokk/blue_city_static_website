@@ -26,7 +26,12 @@ const NavBar = () => {
         {/* <div className="flex gap-10 text-red-300">
         {menu_items.map((item) => item.title)}
       </div> */}
-        <div className="flex-row lg:flex gap-4 hidden">
+        <div
+          className={`${
+            isOpen ? style.open_nav_items : style.close_nav_items
+          } flex-row lg:flex`}
+        >
+          {/* <div className="flex-row lg:flex gap-4 absolute bg-indigo-500 w-full py-4 pl-7 top-[-400px] transition-all ease-in duration-500 z-[-1]"> */}
           <Link className={style.nav_items} href="/">
             <span className={style.item}>Home</span>
           </Link>
