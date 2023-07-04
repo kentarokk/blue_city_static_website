@@ -1,6 +1,7 @@
 import "./globals.css";
 import { Inter } from "next/font/google";
 import NavBar from "../components/NavBar/NavBar";
+import MouseStalker from "@/components/MouseStalker";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -16,6 +17,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <MouseStalker />
       <body className={inter.className}>{children}</body>
     </html>
   );
