@@ -53,6 +53,10 @@ const PlayGround = () => {
           </div>
         </div>
       </section>
+      {/* <span className={style.scrollDownText}>Scroll</span> */}
+      <div className={style.scrollDownDiv}>
+        <span className={style.scrollDown}></span>
+      </div>
       <section>
         <div className="container bg-slate-800 px-4 py-20 mx-auto">
           <div className="flex flex-col text-center w-full mb-20">
