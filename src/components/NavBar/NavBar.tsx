@@ -15,7 +15,7 @@ const NavBar = () => {
   };
   return (
     <>
-      <nav className="my-5 mx-10 lg:mx-10 flex flex-row justify-around items-center">
+      <nav className="my-5 mx-10 lg:mx-20 flex flex-row justify-between items-center">
         <Image
           src="/logo.svg"
           alt="bluecity"

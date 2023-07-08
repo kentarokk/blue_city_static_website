@@ -1,7 +1,7 @@
 .scrollDownText {
   display: inline-block;
   transform: rotate(-90deg);
-  font-size: 0.8rem;
+  font-size: 0.5rem;
   position: absolute;
   left: 1px;
   top: 56.5%;
@@ -37,7 +37,7 @@
 .scrollDown::after {
   content: "";
   position: absolute;
-  top: 0;
+  left: 25px;
   width: 2px;
   height: 30px;
   background: #eee;
