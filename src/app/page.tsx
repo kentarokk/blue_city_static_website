@@ -6,6 +6,7 @@ import style from "./Page.module.css";
 import Image from "next/image";
 import TestFramerMotion from "../components/TestFramerMotion";
 import NavBar from "../components/NavBar/NavBar";
+import CircleButton from "@/components/CircleButton/CircleButton";
 
 const menu_items = [
   {
@@ -53,6 +54,7 @@ const PlayGround = () => {
           </div>
         </div>
       </section>
+      <CircleButton />
       <div className={style.scrollDownDiv}>
         <span className={style.scrollDown}></span>
         <span className={style.scrollDownText}>Scroll</span>
