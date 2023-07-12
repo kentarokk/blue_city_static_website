@@ -1,5 +1,6 @@
 import React from "react";
 import TestFramerMotion from "./TestFramerMotion";
+import SmallButton from "./SmallButton/SmallButton";
 
 const Hero = () => {
   return (
@@ -17,10 +18,13 @@ const Hero = () => {
             mlkshk tote bag selvage hot chicken authentic tumeric truffaut
             hexagon try-hard chambray.
           </p>
-          <div className="flex justify-center">
+          <div className="flex justify-center items-center">
             <button className="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">
               Explore
             </button>
+            <div className="ml-3">
+              <SmallButton>Contact Us</SmallButton>
+            </div>
           </div>
         </div>
         <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
