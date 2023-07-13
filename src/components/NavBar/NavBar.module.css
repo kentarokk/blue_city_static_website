@@ -50,6 +50,7 @@
   .open_nav_items {
     /* transform: translateY(100vh); */
     opacity: 90%;
+    z-index: 100;
   }
   .toggle_btn {
     display: block;
@@ -93,7 +94,7 @@
     height: 30px;
     transition: transform 0.5s;
     cursor: pointer;
-    z-index: 20;
+    z-index: 100;
   }
 
   .open_toggle_btn span {
