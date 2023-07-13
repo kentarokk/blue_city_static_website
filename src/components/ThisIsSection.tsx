@@ -1,4 +1,5 @@
 import React from "react";
+import AnimationButton from "./AnimationButton/AnimationButton";
 
 const ThisIsSection = () => {
   return (
@@ -12,6 +13,7 @@ const ThisIsSection = () => {
             provident aspernatur ea!
           </h3>
         </div>
+        <AnimationButton>detail...</AnimationButton>
       </div>
     </section>
   );
