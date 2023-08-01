@@ -12,16 +12,14 @@ const CategorySection = () => {
             </span>
 
             <TestFramerMotion>
-              <h2 className="sm:text-3xl text-2xl title-font font-medium text-gray-900 mt-4 mb-4">
+              <h2 className="sm:text-3xl text-2xl title-font font-medium text-indigo-300 mt-4 mb-4">
                 Roof party normcore before they sold out, cornhole vape
               </h2>
               <p className="leading-relaxed mb-8">
-                Live-edge letterpress cliche, salvia fanny pack humblebrag
-                narwhal portland. VHS man braid palo santo hoodie brunch trust
-                fund. Bitters hashtag waistcoat fashion axe chia unicorn. Plaid
-                fixie chambray 90's, slow-carb etsy tumeric. Cray pug you
-                probably haven't heard of them hexagon kickstarter craft beer
-                pork chic.
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor
+                exercitationem consectetur dolore ab qui dolorum dicta ipsa
+                minima incidunt quasi impedit quas assumenda officia tempora
+                sequi tenetur, totam aut. Odit.
               </p>
             </TestFramerMotion>
             <div className="flex items-center flex-wrap pb-4 mb-4 border-b-2 border-gray-100 mt-auto w-full">
@@ -77,8 +75,8 @@ const CategorySection = () => {
                 className="w-12 h-12 rounded-full flex-shrink-0 object-cover object-center"
               />
               <span className="flex-grow flex flex-col pl-4">
-                <span className="title-font font-medium text-gray-900">
-                  Holden Caulfield
+                <span className="title-font font-medium text-indigo-300">
+                  Ao
                 </span>
                 <span className="text-gray-400 text-xs tracking-widest mt-0.5">
                   UI DEVELOPER
@@ -91,14 +89,14 @@ const CategorySection = () => {
               CATEGORY
             </span>
             <TestFramerMotion>
-              <h2 className="sm:text-3xl text-2xl title-font font-medium text-gray-900 mt-4 mb-4">
+              <h2 className="sm:text-3xl text-2xl title-font font-medium text-indigo-300 mt-4 mb-4">
                 Pinterest DIY dreamcatcher gentrify single-origin coffee
               </h2>
               <p className="leading-relaxed mb-8">
-                Live-edge letterpress cliche, salvia fanny pack humblebrag
-                narwhal portland. VHS man braid palo santo hoodie brunch trust
-                fund. Bitters hashtag waistcoat fashion axe chia unicorn. Plaid
-                fixie chambray 90's, slow-carb etsy tumeric.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus
+                similique dicta tempora aut dignissimos aliquam veritatis,
+                assumenda mollitia eveniet quo, quis quisquam ipsa. Ipsum
+                similique rem eius tempore, iusto laboriosam.
               </p>
             </TestFramerMotion>
             <div className="flex items-center flex-wrap pb-4 mb-4 border-b-2 border-gray-100 mt-auto w-full">
@@ -154,8 +152,8 @@ const CategorySection = () => {
                 className="w-12 h-12 rounded-full flex-shrink-0 object-cover object-center"
               />
               <span className="flex-grow flex flex-col pl-4">
-                <span className="title-font font-medium text-gray-900">
-                  Alper Kamu
+                <span className="title-font font-medium text-indigo-300">
+                  Blue Navy
                 </span>
                 <span className="text-gray-400 text-xs tracking-widest mt-0.5">
                   DESIGNER

@@ -14,14 +14,16 @@ const PlayGround = () => {
     <>
       <NavBar />
       <Hero />
-      <CircleButton />
+      <div className="my-10">
+        <CircleButton />
+      </div>
       <div className={style.scrollDownDiv}>
         <span className={style.scrollDown}></span>
         <span className={style.scrollDownText}>Scroll</span>
       </div>
       <ThisIsSection />
       <CategorySection />
-      <CountSection />
+      {/* <CountSection /> */}
       <Footer />
     </>
   );
