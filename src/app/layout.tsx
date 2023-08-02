@@ -10,6 +10,7 @@ export const metadata = {
   description: "sample static website",
 };
 
+<link rel="icon" href="/favicon.ico" sizes="any" />;
 export default function RootLayout({
   children,
 }: {
