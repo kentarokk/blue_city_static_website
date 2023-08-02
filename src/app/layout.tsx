@@ -1,7 +1,7 @@
 import "./globals.css";
 import { Inter } from "next/font/google";
-import NavBar from "../components/NavBar/NavBar";
-import MouseStalker from "@/components/MouseStalker";
+import NavBar from "../components/section/NavBar/NavBar";
+import MouseStalker from "@/components/elements/MouseStalker";
 
 const inter = Inter({ subsets: ["latin"] });
 

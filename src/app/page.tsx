@@ -1,14 +1,14 @@
 "use client";
 
 import style from "./Page.module.css";
-import NavBar from "../components/NavBar/NavBar";
-import CircleButton from "@/components/CircleButton/CircleButton";
-import Footer from "@/components/Footer";
-import CountSection from "@/components/CountSection";
-import ImageSection from "@/components/ImageSection";
-import CategorySection from "@/components/CategorySection";
-import ThisIsSection from "@/components/ThisIsSection";
-import Hero from "@/components/Hero";
+import NavBar from "../components/section/NavBar/NavBar";
+import CircleButton from "@/components/elements/CircleButton/CircleButton";
+import Footer from "@/components/section/Footer";
+import CountSection from "@/components/section/CountSection";
+import ImageSection from "@/components/section/ImageSection";
+import CategorySection from "@/components/section/CategorySection";
+import ThisIsSection from "@/components/section/ThisIsSection";
+import Hero from "@/components/section/Hero";
 
 const PlayGround = () => {
   return (

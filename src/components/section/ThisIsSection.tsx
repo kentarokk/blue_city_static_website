@@ -1,5 +1,5 @@
 import React from "react";
-import AnimationButton from "./AnimationButton/AnimationButton";
+import AnimationButton from "../elements/AnimationButton/AnimationButton";
 
 const ThisIsSection = () => {
   return (

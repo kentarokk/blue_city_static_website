@@ -2,7 +2,7 @@
 
 import { FC, CSSProperties } from "react";
 import { animated } from "react-spring";
-import useMouseStalker from "../hooks/useMouseStalker";
+import useMouseStalker from "../../hooks/useMouseStalker";
 
 const initMouse = {
   width: 16,

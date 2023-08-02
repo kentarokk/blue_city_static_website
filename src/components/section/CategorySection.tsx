@@ -1,5 +1,5 @@
 import React from "react";
-import TestFramerMotion from "./TestFramerMotion";
+import TestFramerMotion from "../elements/TestFramerMotion";
 
 const CategorySection = () => {
   return (
