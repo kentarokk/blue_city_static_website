@@ -5,7 +5,7 @@ const CircleButton = () => {
   return (
     <div className="text-center pt-40px">
       <span className={style.btn_loading}>
-        <span>About Us</span>
+        <span>explore</span>
       </span>
     </div>
   );

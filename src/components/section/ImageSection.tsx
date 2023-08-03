@@ -1,6 +1,6 @@
 import React from "react";
 import TestFramerMotion from "../elements/TestFramerMotion";
-import SmallButton from "../elements/SmallButton/SmallButton";
+import CircleButton from "@/components/elements/CircleButton/CircleButton";
 
 const ImageSection = () => {
   return (
@@ -28,9 +28,7 @@ const ImageSection = () => {
             quisquam?
           </p>
           <div className="flex justify-center items-center">
-            <button className="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">
-              Explore
-            </button>
+            <CircleButton />
           </div>
         </div>
       </div>
